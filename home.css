@@ -1,0 +1,273 @@
+@keyframes yoyo{
+    0% { height:5vw;
+    width:25vw ;
+    } 100%{  height: 5vw;
+        width: 30vw;}
+
+}
+@keyframes mainfont{
+    0%{
+        left:5vw;
+        top:10vw;
+    }
+    100%{
+        left:9vw;
+        top:10vw;
+    }
+}
+@keyframes gymfreak{
+    0%{
+        height:5vw;
+        width:5vw;
+    }  100%{
+        height:20vw;
+    width:20vw;
+    }
+
+}
+@keyframes grlgym{
+ from {
+     height:3.5vw;
+     width:3.5vw;
+
+ }
+ to{
+    height:17vw;
+    width:17vw;
+}
+}
+@keyframes foot{
+    from {
+        height:35vw;
+        width: 78vw;
+    }
+    to{
+        height:40vw;
+        width: 80vw;
+    }
+}
+@keyframes imagefooter{
+from{
+    height:26vw;
+    width:27.5vw;
+}
+to{
+    height:30vw;
+    width:32vw;
+}
+
+}
+
+*{
+    margin:0px;
+    width:0px;
+}
+body{
+    background-color: rgb(150, 2, 2);
+}
+header.head{
+    height: 7vw;
+    width:100vw;
+    
+}
+img.head{
+    height: 5.3%;
+    width: 30vw;
+    
+    position: absolute;
+    left: 6.3vw;
+    top: 2.5vw;
+    animation-name: yoyo;
+    animation-delay: 1.4s;
+    animation-duration:1.78s;
+    animation-direction: alternate;
+    -o-animation-timing-function: ease-in-out;/* cubic bezier function is used to set timing of animation how it works wrt time.*/
+    animation-iteration-count: infinite;
+
+    
+}
+image:hover{
+    animation-play-state: paused;
+}
+ul.top{
+    position: absolute;
+    right:0.3vw;
+    list-style-type: none;
+    padding:0px;
+    width: 43.8vw;
+    height: 4vw;
+    top: 3.31vw;
+    margin-right: 0px;
+    border-style:solid;
+    border-width:0px;
+    border-left-width: .42vw;
+  /*  border-right-width: 1.47vw;*/
+    
+    border-color: rgb(33, 170, 33);
+
+    
+}
+a{
+    text-decoration:  none;
+    display: inline;
+
+}
+ul.top li{
+    display:inline-block;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 0.5vw;
+   width:7vw;
+   height: 1vw;
+    
+}
+li.booknow{
+    padding:0px;
+}
+li.about{
+    padding:0.8vw;
+}
+li.home{
+    padding:0.5vw;
+    width: 5vw;
+}
+li.login{
+    width: 4.45vw;
+}
+a:link{
+    color:whitesmoke;
+    text-shadow: 2.5px 2.5px 2.5px rgb(0, 0, 0);
+    
+
+}
+a:visited{
+    color:whitesmoke;
+}
+a:hover{
+    color:rgb(250, 249, 249);
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px black;
+}
+div.main{
+   background-image: url("yogagirl.jpg");
+background-repeat: no-repeat;
+background-size: 28vw 40vw;
+
+background-attachment: scroll;
+background-origin: border-box;
+background-position-x: 69vw;
+background-position-y: 5vw;
+height: 50vw;
+width:100vw;
+background-color: rgb(0, 0, 0);
+position:relative;
+margin-top: .97vw;
+}
+p.main{
+    height: 16vw;
+    width: 55vw;
+    indent:4vw;
+    margin:0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4vw;
+    position: absolute;
+   /* top: 10vw;
+    left: 9vw;*/
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.2vw;
+    word-spacing: 0.3vw;
+    animation-name: mainfont;
+    animation-duration: 2.1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+   animation-delay: 0.8s;
+    animation-timing-function: ease;
+    text-shadow: .1vw .1vw 0.5px yellow;
+}
+img.gym{
+    height:20vw;
+    width:20vw;
+    position:absolute;
+    top:20vw;
+    left:8vw;
+    animation-name: gymfreak;
+    animation-duration: 2.1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    
+}
+img.grlpower{
+    height:17vw;
+    width:17vw;
+    position:absolute;
+    top:23vw;
+    left: 27vw;
+    opacity: 0.7;
+    animation-name: grlgym;
+    animation-duration: 2.1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    
+    
+
+}
+div.footer{
+    width: 80vw;
+    height: 40vw;
+    background-color: gray;
+    position:relative;
+    left:10vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    border-radius: 5vw;
+    animation-name: foot;
+    animation-delay: 0s;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -o-animation-timing-function: ease;
+}
+img.footer{
+    position:absolute;
+    height:30vw;
+    width:32vw;
+    left:4vw;
+    top:5vw;
+    opacity:0.6;
+    border-radius: 7vw;
+    animation-name: imagefooter;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+}
+span.logos{
+    position:absolute;
+    height:30vw;
+    width:30vw;
+    right:3vw;
+    top:5vw;
+}
+ul.logos{
+width: 35vw;
+position:absolute;
+top:13.6vw;
+right: 3vw;
+
+}
+ul.logos li{
+    display:inline;
+    padding: 0.9vw;
+
+}
+img.logos{
+    height:4vw;
+    width:4vw;
+}
